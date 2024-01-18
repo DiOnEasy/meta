@@ -1,0 +1,273 @@
+@media (max-width: 1600px) {
+    .income {
+        padding: 60px 3%;
+    }
+
+    .income__group:nth-child(2),
+    .income__group:nth-child(1) {
+        column-gap: 50px;
+    }
+
+    .header__nav {
+        column-gap: 10%;
+    }
+
+    .header {
+        padding: 40px 5%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .zuckerberg {
+        right: 0;
+    }
+
+    .blue-circle {
+        right: 86px;
+    }
+
+    .white-circle {
+        right: 226px;
+    }
+
+    .reviews__slider {
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .zuckerberg {
+        right: -400px;
+    }
+
+    .blue-circle {
+        right: -314px;
+    }
+
+    .white-circle {
+        right: -134px;
+    }
+
+    .income__statistic-item p:nth-child(1) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .income__advantages-item p:nth-child(2) {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bonus-received__header img {
+        width: 150px;
+    }
+
+    .get-bonus__items img {
+        width: 125px;
+    }
+
+    .registration-form,
+    .get-bonus,
+    .bonus-received,
+    .thanks-form {
+        padding: 20px 40px;
+    }
+
+    .income__group:nth-child(1),
+    .income__group:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+
+    .income__content:last-child {
+        order: -1;
+    }
+
+    .calculation__input_sum::after,
+    .calculation__input input {
+        font-size: 24px;
+    }
+
+    .calculation__header p:nth-child(1),
+    .bonus__header,
+    .header__title p {
+        font-size: 34px;
+    }
+
+    .header__nav-links {
+        column-gap: 15px;
+    }
+
+    .header__nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .calculation__input input {
+        padding: 4px 20px 4px 5px;
+        max-width: 17vw;
+
+
+    }
+
+    .calculation__input_sum::after {
+        top: calc(50% - 36px);
+
+        right: 15px;
+    }
+
+    .calculation__input span {
+        font-size: 12px;
+        padding-left: 5px;
+        margin-bottom: 3px;
+    }
+
+    .calculation {
+        padding: 60px 15px;
+    }
+
+    .calculation__symbol {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .registration-form, .get-bonus, .bonus-received, .thanks-form{
+        margin-right: 20px;
+    }
+    .registration-form__inputs form input {
+        padding: 10px;
+    }
+
+    .registration-form__inputs form button {
+        padding: 10px 20px;
+    }
+
+    .bonus-received__header img {
+        width: 100px;
+    }
+
+    .get-bonus__items img {
+        width: 100px;
+    }
+
+    .zuckerberg {
+        bottom: 0;
+        right: -150px;
+        height: 300px;
+    }
+
+    .blue-circle,
+    .white-circle {
+        bottom: -50px;
+    }
+
+    .white-circle {
+        right: -300px;
+    }
+
+    .income__advantages-item,
+    .income__statistic-item {
+        padding: 10px 20px;
+    }
+
+    .calculation__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .calculation__input input {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .registration-form,
+    .get-bonus,
+    .bonus-received,
+    .thanks-form {
+        padding: 20px 5px;
+    }
+
+    .get-bonus__header p:nth-child(1),
+    .registration-form__header p,
+    .bonus-received__header p:nth-child(1),
+    .thanks-form__header p:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .header {
+        padding: 40px 3%;
+    }
+
+    .get-bonus__items img {
+        width: 85px;
+    }
+
+    .get-bonus__items img:nth-child(7),
+    .get-bonus__items img:nth-child(8) {
+        display: none;
+    }
+
+    .get-bonus__items {
+        text-align: center;
+    }
+
+    .header__nav {
+        column-gap: 5%;
+        margin-bottom: 100px;
+        align-items: flex-start;
+    }
+
+    .income__statistic,
+    .income__advantages {
+        grid-template-columns: 1fr;
+
+    }
+
+    .income__advantages-item,
+    .income__statistic-item {
+        padding: 20px 40px;
+    }
+
+    .header__nav-links {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+    }
+
+    .get-bonus__items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bonus-received__header img {
+        width: 85px;
+    }
+
+    .calculation__header p:nth-child(1),
+    .bonus__header,
+    .header__title p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .zuckerberg {
+        right: -200px;
+    }
+
+    .blue-circle {
+        right: -400px;
+    }
+
+    .white-circle {
+        right: -400px;
+    }
+}
