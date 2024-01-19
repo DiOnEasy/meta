@@ -60,7 +60,7 @@
 }
 
 @media (max-width: 1024px) {
-    .links__opened{
+    .links__opened {
         background: #0252A6;
         width: 40%;
         height: calc(100vh - 80px);
@@ -71,8 +71,9 @@
         padding: 40px 5%;
         display: flex;
         transition-duration: .5s;
-        
-        }
+
+    }
+
     .bonus-received__header img {
         width: 150px;
     }
@@ -113,7 +114,7 @@
         column-gap: 15px;
     }
 
-    .header__nav{
+    .header__nav {
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -130,9 +131,11 @@
 
 
     }
-.burger{
-    display: block;
-}
+
+    .burger {
+        display: block;
+    }
+
     .calculation__input_sum::after {
         top: calc(50% - 36px);
 
@@ -153,24 +156,31 @@
         font-size: 24px;
         line-height: 32px;
     }
-    .none1024{
+
+    .none1024 {
         display: none;
     }
-    .links{
+
+    .links {
         flex-direction: column;
         align-items: flex-start;
         row-gap: 14px;
         display: none;
     }
 
-    
-    
+
+
 }
 
 @media (max-width: 768px) {
-    .registration-form, .get-bonus, .bonus-received, .thanks-form{
+
+    .registration-form,
+    .get-bonus,
+    .bonus-received,
+    .thanks-form {
         margin-right: 20px;
     }
+
     .registration-form__inputs form input {
         padding: 10px;
     }
@@ -220,9 +230,10 @@
 }
 
 @media (max-width: 640px) {
-    .links__opened{
+    .links__opened {
         width: 90%;
     }
+
     .registration-form,
     .get-bonus,
     .bonus-received,
@@ -278,6 +289,13 @@
 
     .get-bonus__items {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .links {
+        padding-top: 100px;
+        text-align: center;
+        row-gap: 24px;
+        align-items: center;
     }
 }
 
