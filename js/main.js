@@ -78,6 +78,32 @@ function calculate() {
     calculateValue = ((sum.value * 18.5) / days.value).toFixed(1);
     let [integerPart, decimalPart] = calculateValue.split(".");
     result.value = `${integerPart}.(${decimalPart})`;
-    sum.value = sum.value
+    sum.value = sum.value;
   }
+}
+
+let burger = document.querySelector(".burger");
+
+document.querySelectorAll('.links a').forEach(link => link.onclick = () => openMobileMenu())
+
+burger.onclick = () => openMobileMenu();
+
+function openMobileMenu() {
+  if(window.innerWidth <= 1024){
+    document
+    .querySelector(".header__nav-links")
+    .classList.toggle("links__opened");
+  document.querySelector(".links").classList.toggle("flex");
+  document
+    .querySelector(".burger__line:nth-child(1)")
+    .classList.toggle("mobile-menu__line_rotated");
+  document.querySelector(".burger__line:nth-child(2)").classList.toggle("none");
+
+  document
+    .querySelector(".burger__line:nth-child(3)")
+    .classList.toggle("mobile-menu__line_other-rotated");
+
+    document.querySelector('body').classList.toggle('hidden')
+  }
+ 
 }

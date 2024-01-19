@@ -9,24 +9,29 @@ body * {
     padding: 0;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-.slick-dots{
-   width: calc(100% - 20px)!important;
- 
+.hidden{
+    overflow: hidden;
+}
+.slick-dots {
+    width: calc(100% - 20px) !important;
+
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
+
 input[type="number"] {
-    -moz-appearance: textfield; /* Firefox */
-  }
-  
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
 .header {
     background: url(../img/header-bg.png);
     background-position: center;
@@ -404,7 +409,8 @@ input[type="number"] {
     color: #0A2730;
 
 }
-.reviews__logo img{
+
+.reviews__logo img {
     max-width: 40px;
     max-height: 40px;
 }
@@ -456,7 +462,8 @@ input[type="number"] {
 
 .registration-form,
 .get-bonus,
-.bonus-received, .thanks-form {
+.bonus-received,
+.thanks-form {
     background: white;
     padding: 40px 80px;
     text-align: center;
@@ -561,7 +568,8 @@ input[type="number"] {
     margin-bottom: 24px;
 
 }
-.bonus-received__header{
+
+.bonus-received__header {
     margin-bottom: 24px;
 }
 
@@ -579,29 +587,64 @@ input[type="number"] {
 
 .thanks-form__header a {
     background: #0083FF;
-padding: 20px 40px;
-border-radius: 8px;
-display: inline-block;
-color: white;
-text-decoration: none;
-font-size: 20px;
-font-weight: 600;
-line-height: 24px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
 
 
 }
-.calculation__input_sum{
+
+.calculation__input_sum {
     position: relative;
 }
-.calculation__input_sum::after{
+
+.calculation__input_sum::after {
     content: '₸';
     font-size: 40px;
     font-weight: 600;
     line-height: 49px;
-  top: calc(50% - 31px);
-  right: 30px;
-  transform: translate(50%, 50%);
-    
+    top: calc(50% - 31px);
+    right: 30px;
+    transform: translate(50%, 50%);
+
     color: #0083FF;
     position: absolute;
+}
+
+.burger{
+    margin-left: auto;
+    display: none;
+}
+
+.burger__line {
+    height: 2px;
+    width: 20px;
+    background: #000;
+    margin-bottom: 4px;
+    transition: all .3s linear;
+}
+
+.links {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+
+
+.flex{
+    display: flex!important;
+}
+
+.mobile-menu__line_rotated {
+    transform: rotate(45deg) translate(4px, 0px);
+}
+
+.mobile-menu__line_other-rotated {
+    transform: rotate(-45deg) translate(5px, 0px);
 }
